@@ -1,3 +1,37 @@
-body {
-  background-color: #fffff0 !important;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins";
+  background-color: #f2f2f2;
+}
+.bg {
+  /* The image used */
+  /* background-image: url("./assets/fundo2.png"); */
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 33px;
+  right: 40px;
+  background-color: rgb(248, 142, 144);
+  color: #fff;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+}
+
+.my-float {
+  margin-top: 16px;
 }

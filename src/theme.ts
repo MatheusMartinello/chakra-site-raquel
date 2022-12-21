@@ -1,12 +1,13 @@
 import { extendTheme } from "@chakra-ui/react";
+import bgImage from "./assets/fundo.png";
 
 const theme = extendTheme({
   fonts: {
-    heading: `'Waterfall', sans-serif`,
-    body: `'Forum', sans-serif`,
+    heading: `'Lato', sans-serif`,
+    body: `'Jost', sans-serif`,
   },
   body: {
-    backgroundColor: "yellow.400",
+    lineWeight: 1.4,
   },
 });
 
