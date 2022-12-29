@@ -18,7 +18,7 @@ export const Me = () => {
       alignItems={"center"}
       justifyContent="center"
       my={"25px"}
-      mx={"90px"}
+      mx={{ base: "10px", md: "90px" }}
       bgColor="rgba(174, 224, 224, 0.4)"
       borderRadius={"25px"}
       id="me"

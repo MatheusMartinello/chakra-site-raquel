@@ -45,16 +45,11 @@ export const LeftBox = () => {
             raquel.vicz@gmail.com
           </Text>
         </Flex>
-        <HStack
-          spacing={20}
-          width="100%"
-          justifyContent={"flex-end"}
-          marginRight={20}
-        >
+        <Flex width="100%" justifyContent={"space-evenly"}>
           <Button
             fontFamily={"Poppins"}
             fontSize={20}
-            bg="#ffff"
+            bg="white"
             onClick={() => handleClickAbout()}
           >
             Início
@@ -62,7 +57,7 @@ export const LeftBox = () => {
           <Button
             fontFamily={"Poppins"}
             fontSize={20}
-            bg="#ffff"
+            bg="#white"
             onClick={() => handleClickGoToMe()}
           >
             Sobre
@@ -70,12 +65,12 @@ export const LeftBox = () => {
           <Button
             fontFamily={"Poppins"}
             fontSize={20}
-            bg="#ffff"
+            bg="#white"
             onClick={() => handleClickGoToPs()}
           >
             Psicologia
           </Button>
-        </HStack>
+        </Flex>
       </VStack>
     </Container>
   );

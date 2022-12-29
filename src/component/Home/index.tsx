@@ -13,7 +13,7 @@ export const Home = () => {
             src={bgImg}
             w={"100%"}
             m={"0px 88px -100px 88px"}
-            maxWidth={"350px"}
+            maxWidth={{ base: "150px", md: "350px" }}
           />
           <Text
             fontFamily={"Waterfall!important"}

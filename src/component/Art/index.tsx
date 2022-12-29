@@ -11,7 +11,7 @@ export const Art = () => {
       alignItems={"center"}
       justifyContent="center"
       my={"25px"}
-      mx={"90px"}
+      mx={{ base: "10px", md: "90px" }}
       bgColor="rgba(255, 248, 154, 0.32)"
       borderRadius={"25px"}
       id={"art"}
@@ -24,7 +24,11 @@ export const Art = () => {
         justifyContent={"space-around"}
         alignItems="center"
       >
-        <Box w={"350px"} alignItems="center">
+        <Box
+          w={"350px"}
+          alignItems="center"
+          display={{ base: "none", md: "flex", lg: "flex" }}
+        >
           <Carousel infiniteLoop>
             <div>
               <Img src={art5} />

@@ -20,7 +20,7 @@ export const RightBox = () => {
     document.getElementById("phone")?.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <Container maxW="100%" paddingLeft={4}>
+    <Container maxW="90%">
       <VStack divider={<StackDivider borderColor="gray.300" />} spacing={4}>
         <Flex
           alignContent={"center"}
@@ -37,11 +37,11 @@ export const RightBox = () => {
             (41) 99178-7153
           </Text>
         </Flex>
-        <HStack spacing={20} width="100%" justifyContent={"flex-start"} ml={20}>
+        <Flex width="100%" justifyContent={"space-evenly"}>
           <Button
             fontFamily={"Poppins"}
             fontSize={20}
-            bg="#fff"
+            bg="white"
             onClick={() => handleClickArt()}
           >
             Arteterapia
@@ -49,7 +49,7 @@ export const RightBox = () => {
           <Button
             fontFamily={"Poppins"}
             fontSize={20}
-            bg="#fff"
+            bg="white"
             onClick={() => handleClickLocal()}
           >
             Local
@@ -57,12 +57,12 @@ export const RightBox = () => {
           <Button
             fontFamily={"Poppins"}
             fontSize={20}
-            bg="#fff"
+            bg="white"
             onClick={() => handleClickPhone()}
           >
             Contato
           </Button>
-        </HStack>
+        </Flex>
       </VStack>
     </Container>
   );

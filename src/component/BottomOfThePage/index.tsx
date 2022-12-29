@@ -12,7 +12,11 @@ export const BottomOfThePage = () => {
   };
   return (
     <Box w={"100%"} p={4} id={"phone"} fontSize={"1.05rem"}>
-      <Flex flexDir={"row"} justifyContent="space-evenly">
+      <Flex
+        flexDir={"row"}
+        justifyContent="space-evenly"
+        display={{ base: "block", md: "flex" }}
+      >
         <VStack>
           <Box maxW={"120px"} p="20px">
             <Img src={Logo} borderRadius={"25px"} />

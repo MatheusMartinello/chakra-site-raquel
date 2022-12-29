@@ -7,7 +7,7 @@ export const Psychology = () => {
       alignItems={"center"}
       justifyContent="center"
       my={"25px"}
-      mx={"90px"}
+      mx={{ base: "10px", md: "90px" }}
       bgColor="rgba(252, 210, 210, 0.6)"
       borderRadius={"25px"}
     >
@@ -25,7 +25,7 @@ export const Psychology = () => {
           <Text fontSize={"28px"} fontWeight="bold" fontFamily={"Jost"}>
             Psicologia
           </Text>
-          <VStack textAlign={"justify"} maxW={"400px"}>
+          <Flex display="grid" textAlign={"justify"}>
             <Text>
               Trabalho pela abordagem analítica e prezo muito pelo acolhimento e
               compreensão do paciente em sua totalidade, de forma ampla e
@@ -44,9 +44,13 @@ export const Psychology = () => {
               criança interior, regular suas emoções e comportamentos e melhorar
               sua autoestima.
             </Text>
-          </VStack>
+          </Flex>
         </Box>
-        <Box w={"400px"} alignItems="center" ml="185px" textAlign={"left"}>
+        <Box
+          alignItems="center"
+          ml={{ base: "0", md: "185px" }}
+          textAlign={"left"}
+        >
           <ul>
             <li>Autoconhecimento</li>
             <li>Dependência emocional</li>

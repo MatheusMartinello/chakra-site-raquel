@@ -28,7 +28,7 @@ export const Testimonials = () => {
             autoPlay={true}
             interval={13000}
           >
-            <Carousel.Item>
+            <Flex>
               <h3>K.C.</h3>
 
               <Text>
@@ -66,7 +66,7 @@ export const Testimonials = () => {
                 afeto e cuidado, nunca são demais, e ela tem de sobra para
                 oferecer.
               </Text>
-            </Carousel.Item>
+            </Flex>
             <Flex display={"grid"} alignItems={"center"}>
               <h3>L.C.</h3>
 

@@ -5,17 +5,14 @@ import { BoxRight } from "./component/BoxRight";
 
 export const About = () => {
   return (
-    <Box
-      mx={"50px"}
-      my={5}
-      w={"100%"}
-      maxW={"1340px"}
-      bgColor={"#f3f3f3"}
-      id="about"
-    >
+    <Box px={10} my={5} w={"100%"} bgColor={"#f3f3f3"} id="about">
       <Flex
-        display={{ base: "grid", md: "grid", lg: "flex" }}
-        justifyContent={"space-between"}
+        display={{ base: "grid", md: "flex", lg: "flex" }}
+        justifyContent={{
+          base: "center",
+          md: "space-between",
+          lg: "space-between",
+        }}
       >
         <BoxLeft />
         <BoxMiddle />
