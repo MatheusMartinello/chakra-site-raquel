@@ -10,8 +10,8 @@ export const About = () => {
         display={{ base: "grid", md: "flex", lg: "flex" }}
         justifyContent={{
           base: "center",
-          md: "space-between",
-          lg: "space-between",
+          md: "space-evenly",
+          lg: "space-evenly",
         }}
       >
         <BoxLeft />

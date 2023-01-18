@@ -1,8 +1,8 @@
 import { Box, Container, Flex, Image, Img, Text } from "@chakra-ui/react";
-import Local1 from "../../assets/Local/local1.png";
-import Local2 from "../../assets/Local/local2.png";
-import Local3 from "../../assets/Local/local3.png";
-import Local4 from "../../assets/Local/local4.png";
+import Local1 from "../../assets/Local/local1.webp";
+import Local2 from "../../assets/Local/local2.webp";
+import Local3 from "../../assets/Local/local3.webp";
+import Local4 from "../../assets/Local/local4.webp";
 
 import { Carousel } from "react-responsive-carousel";
 
@@ -15,10 +15,18 @@ export const Local = () => {
       borderRadius={"25px"}
       padding={"20px"}
       my={"25px"}
-      mx={"90px"}
+      mx={{ base: "10px", md: "90px" }}
       id={"local"}
     >
-      <Flex justifyContent={"space-evenly"} alignItems={"center"}>
+      <Flex
+        justifyContent={{
+          base: "grid",
+          md: "space-evenly",
+          lg: "space-evenly",
+        }}
+        alignItems={"center"}
+        display={{ base: "block", md: "flex", lg: "flex" }}
+      >
         <Box display={"grid"} p={10} maxW={"420px"}>
           <Text fontFamily={"Jost"} fontWeight={"bold"} fontSize={"30px"}>
             Local

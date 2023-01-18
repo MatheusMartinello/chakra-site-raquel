@@ -1,5 +1,5 @@
 import { extendTheme } from "@chakra-ui/react";
-import bgImage from "./assets/fundo.png";
+import bgImage from "./assets/fundo.webp";
 
 const theme = extendTheme({
   fonts: {

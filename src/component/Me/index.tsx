@@ -8,8 +8,8 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-import Me1 from "../../assets/Me/Me1.png";
-import Me2 from "../../assets/Me/Me2.png";
+import Me1 from "../../assets/Me/Me1.webp";
+import Me2 from "../../assets/Me/Me2.webp";
 import { Carousel } from "react-responsive-carousel";
 
 export const Me = () => {
@@ -22,7 +22,11 @@ export const Me = () => {
       bgColor="rgba(174, 224, 224, 0.4)"
       borderRadius={"25px"}
       id="me"
+      display={"grid"}
     >
+      <Text fontSize={"28px"} fontWeight="bold" fontFamily={"Jost"} my="20px">
+        Sobre mim
+      </Text>
       <Flex
         maxW={"1000px"}
         w={"100%"}
@@ -30,21 +34,15 @@ export const Me = () => {
         direction="row"
         justifyContent={"space-evenly"}
         alignItems="center"
+        display={{ base: "block", md: "flex", lg: "flex" }}
       >
-        <Box
-          maxW={"450px"}
-          mr={"20px"}
-          display={{ base: "none", md: "flex", lg: "flex" }}
-        >
+        <Box maxW={"450px"} mr={{ base: 0, md: "20px", lg: "20px" }}>
           <Carousel autoFocus interval={6000}>
             <Img src={Me1} />
             <Img src={Me2} />
           </Carousel>
         </Box>
         <Box ml="5px">
-          <Text fontSize={"28px"} fontWeight="bold" fontFamily={"Jost"}>
-            Sobre mim
-          </Text>
           <Stack
             spacing={2}
             maxW={"600px"}
@@ -59,7 +57,6 @@ export const Me = () => {
               Psicologia Clínica.
             </Text>
             <Text>
-              {" "}
               Meu amor pela terapia vem de longe. Desde os meus 15 anos de
               idade, quando começei a minha trajetória de autoconhecimento na
               terapia, me senti extremamente acolhida, ouvida e segura. Foram

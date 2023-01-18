@@ -1,9 +1,9 @@
 import { Box, Flex, Img, Stack, Text } from "@chakra-ui/react";
 import { Carousel } from "react-responsive-carousel";
-import art1 from "../../assets/Art/art1.jpeg";
-import art2 from "../../assets/Art/art2.jpeg";
-import art3 from "../../assets/Art/art3.jpeg";
-import art5 from "../../assets/Art/art5.jpeg";
+import art1 from "../../assets/Art/art1.webp";
+import art2 from "../../assets/Art/art2.webp";
+import art3 from "../../assets/Art/art3.webp";
+import art5 from "../../assets/Art/art5.webp";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 export const Art = () => {
   return (

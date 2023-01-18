@@ -2,12 +2,10 @@ import {
   Button,
   Container,
   Flex,
-  HStack,
   StackDivider,
   Text,
   VStack,
 } from "@chakra-ui/react";
-import { MdOutlineEmail } from "react-icons/md";
 
 export const RightBox = () => {
   const handleClickArt = () => {
@@ -41,7 +39,7 @@ export const RightBox = () => {
           <Button
             fontFamily={"Poppins"}
             fontSize={20}
-            bg="white"
+            bg="#white"
             onClick={() => handleClickArt()}
           >
             Arteterapia
@@ -49,7 +47,7 @@ export const RightBox = () => {
           <Button
             fontFamily={"Poppins"}
             fontSize={20}
-            bg="white"
+            bg="#white"
             onClick={() => handleClickLocal()}
           >
             Local
@@ -57,7 +55,7 @@ export const RightBox = () => {
           <Button
             fontFamily={"Poppins"}
             fontSize={20}
-            bg="white"
+            bg="#white"
             onClick={() => handleClickPhone()}
           >
             Contato

@@ -1,6 +1,6 @@
 .bg {
   /* The image used */
-  background-image: url("../../assets/Home/bgHome.png");
+  background-image: url("../../assets/Home/bgHome.webp");
 
   /* Full height */
   height: 100%;
@@ -10,4 +10,9 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-color: #f3f3f3;
+}
+@media screen and (max-width: 600px) {
+  .bg {
+    background-size: cover;
+  }
 }

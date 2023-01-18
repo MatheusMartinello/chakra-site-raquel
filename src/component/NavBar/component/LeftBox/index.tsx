@@ -1,15 +1,12 @@
 import {
-  Box,
   Button,
   Container,
   Flex,
-  HStack,
   StackDivider,
   Text,
   VStack,
 } from "@chakra-ui/react";
 import { MdOutlineEmail } from "react-icons/md";
-import scrollElement from "react-scroll/modules/mixins/scroll-element";
 export const LeftBox = () => {
   const handleClickAbout = () => {
     document
@@ -49,7 +46,7 @@ export const LeftBox = () => {
           <Button
             fontFamily={"Poppins"}
             fontSize={20}
-            bg="white"
+            bg="#white"
             onClick={() => handleClickAbout()}
           >
             Início
